@@ -73,8 +73,10 @@ footer {
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DCBFFF;
-  opacity: 0.5;
+  box-shadow: 0 0 25px 15px gold !important;
+  opacity: 0.6;
+  color: gold !important;
+  border: 12px solid gold !important;
 }
 
 .red {
@@ -82,7 +84,7 @@ footer {
 }
 
 .drum {
-  box-shadow: 9px 9px #0000007e;
+  box-shadow: 3px 3px 20px 15px #0000007e;
   outline: none;
   border: 12px solid #164863;
   font-size: 4rem;

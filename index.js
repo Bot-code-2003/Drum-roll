@@ -3,29 +3,27 @@ var drumNumber = drumButtons.length;
 
 for (var i = 0; i < drumNumber; i++) {
     drumButtons[i].addEventListener("click", function () {
-        handleButtonClick(this.innerHTML);
+        var buttonInnerHTML = this.innerHTML;
+        handleButtonClick(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     });
 }
 
 document.addEventListener("keypress", function (e) {
     handleButtonClick(e.key.toLowerCase()); 
+    buttonAnimation(e.key);
 });
 
 function handleButtonClick(key) {
-    for (var j = 0; j < drumNumber; j++) {
-        drumButtons[j].style.color = "#427D9D";
-        drumButtons[j].style.backgroundColor = "#b4ccff";
-        drumButtons[j].style.border = "12px solid #164863";
-    }
-
-    var clickedButton = document.querySelector(".drum." + key);
-    if (clickedButton) {
-        clickedButton.style.color = "#e6e600";
-        clickedButton.style.backgroundColor = "#ffffba";
-        clickedButton.style.border = "12px solid orange";
-    }
-
     makeSound(key);
+}
+
+function buttonAnimation(currentKey){
+    var activeButton = document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100);
 }
 
 function makeSound(key) {
