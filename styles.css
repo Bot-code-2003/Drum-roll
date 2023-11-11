@@ -1,35 +1,33 @@
 body {
   text-align: center;
   background-image: url(./images/pexels-dana-tentis-370799.jpg);
-  
 }
 
 h1 {
   font-size: 5rem;
   color: #2d6b8d;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 5px #0000009a;
-
+  /* text-shadow: 3px 5px #ffffff9a;
+   */
+  text-shadow: 2px 2px 15px #000000;
 }
 
 footer {
   color: #ffffff;
   font-family: sans-serif;
   font-weight: bold;
-  text-shadow: 1px 0px #0000009a;
+  /* text-shadow: 1px 0px #0000009a; */
+  text-shadow: 2px 2px 15px #000000;
 }
 
 .w {
   background-image: url(./images/tom1.png);
   background-size: cover;
-  
-
 }
 
 .a {
   background-image: url(./images/tom2.png);
   background-size: cover;
-
 }
 
 .s {
@@ -40,27 +38,21 @@ footer {
 .d {
   background-image: url(./images/tom4.png);
   background-size: cover;
-
 }
 
 .j {
-  
   background-image: url(./images/snare.png);
   background-size: cover;
-
 }
 
 .k {
   background-image: url(./images/crash.png);
   background-size: cover;
-
 }
 
 .l {
-  
   background-image: url(./images/kick.png);
   background-size: cover;
-
 }
 
 .set {
@@ -88,11 +80,11 @@ footer {
   outline: none;
   border: 12px solid #164863;
   font-size: 4rem;
-  font-family: 'Arvo', cursive;
+  font-family: "Arvo", cursive;
   line-height: 2;
   font-weight: 900;
-  color: #427D9D;
-  text-shadow: 3px 2 #DCBFFF;
+  color: #427d9d;
+  text-shadow: 3px 2 #dcbfff;
   border-radius: 15px;
   display: inline-block;
   width: 150px;
