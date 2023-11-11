@@ -11,7 +11,7 @@ for (var i = 0; i < drumNumber; i++) {
 
 document.addEventListener("keypress", function (e) {
     handleButtonClick(e.key.toLowerCase()); 
-    buttonAnimation(e.key);
+    buttonAnimation(e.key.toLowerCase());
 });
 
 function handleButtonClick(key) {
